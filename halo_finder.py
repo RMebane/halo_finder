@@ -12,8 +12,6 @@ import time
 from matplotlib import rc
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-import cupy
-import cupyx.scipy.ndimage
 
 # Simulation data functions written by Bruno Villasenor
 def load_binary_data(filename, dtype=np.float32): 
