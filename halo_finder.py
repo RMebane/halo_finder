@@ -206,8 +206,7 @@ def load_snapshot_data_distributed( nSnap, inDir, data_type, fields, subgrid,  p
         if show_progess: print("")
     return data_out
 
-def get_snapshot(n_snapshot, simDir="500mpc_snapshot/", size=256, length=500):
-    dataDir = '/data/groups/comp-astro/rmebane/'
+def get_snapshot(n_snapshot, dataDir = "/data/groups/comp-astro/rmebane/", simDir="500mpc_snapshot/", size=256, length=500):
     inDir = dataDir + simDir
 
     # data_type = 'hydro'
