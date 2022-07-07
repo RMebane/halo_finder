@@ -222,8 +222,6 @@ def get_snapshot(n_snapshot, dataDir = "/data/groups/comp-astro/rmebane/", simDi
     grid_size = [ size, size, size ] #Size of the simulation grid
     subgrid = [ [0, size], [0, size], [0, size] ] #Size of the volume to load
     data = load_snapshot_data_distributed( n_snapshot, inDir, data_type, fields, subgrid,  precision, proc_grid,  box_size, grid_size, show_progess=False )
-    if(USE_CUPY):
-        return (cupy.array(data[data_type]['density']), data['current_z'])
     return (data[data_type]['density'], data['current_z'])
 
 # wrap around if x is <0 or >=N
